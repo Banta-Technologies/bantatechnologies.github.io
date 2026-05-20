@@ -3,28 +3,88 @@ import Layout from '../layouts/Layout.astro';
 
 const services = [
 	{
-		title: 'Custom Software',
+		title: 'Website Development',
 		description:
-			'Focused web applications, internal tools, and customer portals built around the way your team actually works.',
+			'Static sites, Astro builds, GitHub Pages hosting, landing pages, and SEO-friendly content structure for small organizations that need a clear web presence.',
 	},
 	{
-		title: 'Automation Systems',
+		title: 'Automation & Workflow Systems',
 		description:
-			'Workflow automation, integrations, reporting pipelines, and task reduction for operations that have outgrown manual handoffs.',
+			'Forms, reports, reminders, email workflows, spreadsheet replacement, and data movement that reduce repetitive work without making the process harder to understand.',
 	},
 	{
-		title: 'Digital Infrastructure',
+		title: 'AI-Assisted Operations',
 		description:
-			'Cloud setup, deployment pipelines, data flows, and system architecture that give growing organizations room to move.',
+			'Practical prompt workflows, internal assistant concepts, image and model workflows, and safe AI experiments that support real tasks instead of chasing novelty.',
 	},
 	{
-		title: 'Technical Advisory',
+		title: 'Cloud & Server Systems',
 		description:
-			'Clear audits, modernization plans, and build-versus-buy guidance when the next technology decision needs sharper thinking.',
+			'AWS, EC2, Linux servers, deployment scripts, GitHub Actions, OpenVPN, secure remote access, and monitoring basics for systems that need to stay reachable.',
+	},
+	{
+		title: 'Custom Internal Tools',
+		description:
+			'Small web apps, dashboards, customer portals, admin tools, scripts, and operational utilities built around the way the work actually happens.',
+	},
+	{
+		title: 'Technology Advisory',
+		description:
+			'Plain-English planning, troubleshooting, modernization, vendor selection, and build-vs-buy guidance for decisions that need a practical technical read.',
 	},
 ];
 
-const process = ['Map the operation', 'Design the system', 'Build in focused cycles', 'Measure and improve'];
+const helpers = [
+	'Small businesses',
+	'Nonprofits',
+	'Local organizations',
+	'Independent operators',
+	'Community projects',
+	'Teams outgrowing spreadsheets',
+	'Organizations without full-time IT',
+	'People tired of confusing tools',
+];
+
+const reasons = [
+	{
+		title: 'Real-world work comes first',
+		description:
+			'Before choosing tools, we look at the job, the people doing it, the constraints, and the handoffs that slow everything down.',
+	},
+	{
+		title: 'Clear explanations',
+		description:
+			'You should understand what is being built, why it matters, and how to maintain it. No tech theater required.',
+	},
+	{
+		title: 'Security-minded by default',
+		description:
+			'Remote access, cloud systems, servers, and automation are planned with sensible permissions, backups, and maintainability in mind.',
+	},
+];
+
+const process = [
+	{
+		title: 'Understand the work',
+		description:
+			'We start with the real process: what happens now, what breaks, who touches it, and what better would look like.',
+	},
+	{
+		title: 'Choose the practical path',
+		description:
+			'Sometimes the answer is a website. Sometimes it is automation, a server fix, a script, a dashboard, or better use of tools you already have.',
+	},
+	{
+		title: 'Build in focused steps',
+		description:
+			'Useful pieces come first. The system grows through feedback instead of disappearing into a long, vague project.',
+	},
+	{
+		title: 'Leave it understandable',
+		description:
+			'The goal is durable technology your organization can live with: documented, explainable, and ready for the next improvement.',
+	},
+];
 ---
 
 <Layout>
@@ -34,8 +94,9 @@ const process = ['Map the operation', 'Design the system', 'Build in focused cyc
 			<span>Banta Technologies</span>
 		</a>
 		<nav aria-label="Primary navigation">
+			<a href="#what-we-do">What We Do</a>
 			<a href="#services">Services</a>
-			<a href="#process">Process</a>
+			<a href="#about">About</a>
 			<a href="#contact">Contact</a>
 		</nav>
 	</header>
@@ -52,41 +113,49 @@ const process = ['Map the operation', 'Design the system', 'Build in focused cyc
 				/>
 			</div>
 			<div class="hero-content">
-				<p class="eyebrow">Software systems for practical growth</p>
-				<h1 id="hero-title">Banta Technologies</h1>
+				<p class="eyebrow">Websites, automation, AI, cloud, and practical support</p>
+				<h1 id="hero-title">Practical technology systems for real-world work.</h1>
 				<p class="hero-copy">
-					We build custom software, automation, and digital operations systems for teams that
-					need their technology to work as hard as they do.
+					Banta Technologies helps small businesses, nonprofits, and local organizations build
+					websites, automate repetitive work, modernize operations, and use AI and cloud tools
+					in practical, understandable ways.
 				</p>
 				<div class="hero-actions" aria-label="Primary actions">
 					<a class="button primary" href="#contact">Start a conversation</a>
-					<a class="button secondary" href="#services">Explore services</a>
+					<a class="button secondary" href="#services">See what we build</a>
 				</div>
 			</div>
 			<div class="hero-strip" aria-label="Company focus areas">
-				<span>Operations software</span>
-				<span>Automation</span>
-				<span>Cloud systems</span>
-				<span>Technical planning</span>
+				<span>Small business websites</span>
+				<span>AI-assisted workflows</span>
+				<span>AWS & Linux systems</span>
+				<span>Automation that reduces busywork</span>
 			</div>
 		</section>
 
-		<section class="intro">
+		<section id="what-we-do" class="intro">
 			<div>
-				<p class="section-kicker">What we solve</p>
-				<h2>Technology should remove drag, not create another layer of work.</h2>
+				<p class="section-kicker">What We Do</p>
+				<h2>Technology help for organizations that need things to work.</h2>
 			</div>
-			<p>
-				Banta Technologies helps organizations turn scattered processes, aging tools, and manual
-				workarounds into dependable systems. We favor clear architecture, direct communication,
-				and software that earns its place inside the business.
-			</p>
+			<div class="intro-copy">
+				<p>
+					Many teams are stuck between two bad options: keep wrestling with spreadsheets and
+					manual handoffs, or buy oversized tools that create a new kind of confusion. Banta
+					Technologies works in the middle, where practical systems make a real difference.
+				</p>
+				<p>
+					We build and improve websites, automations, AI workflows, Linux servers, AWS setups,
+					internal tools, and digital operations processes for people who need clear help, not a
+					corporate software production.
+				</p>
+			</div>
 		</section>
 
 		<section id="services" class="services" aria-labelledby="services-title">
 			<div class="section-heading">
 				<p class="section-kicker">Services</p>
-				<h2 id="services-title">Built around the points where work slows down.</h2>
+				<h2 id="services-title">Useful systems, sized for the actual problem.</h2>
 			</div>
 			<div class="service-grid">
 				{
@@ -100,39 +169,90 @@ const process = ['Map the operation', 'Design the system', 'Build in focused cyc
 			</div>
 		</section>
 
+		<section class="audience" aria-labelledby="audience-title">
+			<div class="section-heading compact">
+				<p class="section-kicker">Who We Help</p>
+				<h2 id="audience-title">Built for working organizations, not imaginary perfect ones.</h2>
+			</div>
+			<ul class="audience-list" aria-label="Organizations Banta Technologies helps">
+				{helpers.map((helper) => <li>{helper}</li>)}
+			</ul>
+		</section>
+
+		<section class="why" aria-labelledby="why-title">
+			<div class="section-heading">
+				<p class="section-kicker">Why Banta Technologies</p>
+				<h2 id="why-title">A practical partner when the problem is messy.</h2>
+			</div>
+			<div class="reason-grid">
+				{
+					reasons.map((reason) => (
+						<article>
+							<h3>{reason.title}</h3>
+							<p>{reason.description}</p>
+						</article>
+					))
+				}
+			</div>
+		</section>
+
 		<section id="process" class="process" aria-labelledby="process-title">
 			<div class="section-heading">
 				<p class="section-kicker">Process</p>
-				<h2 id="process-title">A practical path from messy problem to working system.</h2>
+				<h2 id="process-title">Simple enough to follow. Strong enough to keep improving.</h2>
 			</div>
 			<ol class="process-list">
 				{
 					process.map((step, index) => (
 						<li>
 							<span>{String(index + 1).padStart(2, '0')}</span>
-							<strong>{step}</strong>
+							<strong>{step.title}</strong>
+							<p>{step.description}</p>
 						</li>
 					))
 				}
 			</ol>
 		</section>
 
-		<section class="proof" aria-label="Working principles">
+		<section id="about" class="about" aria-labelledby="about-title">
+			<div>
+				<p class="section-kicker">About Victor</p>
+				<h2 id="about-title">Technical skill with real operational experience behind it.</h2>
+			</div>
+			<div class="about-panel">
+				<p>
+					Banta Technologies is led by Victor Banta, a practical technologist, systems builder,
+					veteran, nonprofit founder, and hands-on problem solver.
+				</p>
+				<p>
+					Victor combines technical work with experience in management, transportation and
+					logistics, nonprofit operations, cloud infrastructure, Linux servers, automation, AI
+					image and model workflows, websites, and small-business technology support.
+				</p>
+				<p>
+					His approach is simple: understand the work first, then build technology that makes
+					the work easier. That means plain explanations, maintainable systems, and solutions
+					that fit the people who will actually use them.
+				</p>
+			</div>
+		</section>
+
+		<section class="proof" aria-label="Working principle">
 			<p>
-				We work best with teams that value durable systems, short feedback loops, and technical
-				decisions that can be explained without theater.
+				If your organization has outgrown spreadsheets, confusing tools, or manual processes,
+				the next step does not have to be overwhelming.
 			</p>
 		</section>
 
 		<section id="contact" class="contact" aria-labelledby="contact-title">
 			<div>
 				<p class="section-kicker">Contact</p>
-				<h2 id="contact-title">Bring the workflow, bottleneck, or build idea.</h2>
+				<h2 id="contact-title">Bring the website, workflow, server issue, or build idea.</h2>
 			</div>
 			<div class="contact-panel">
 				<p>
-					Tell us what is slowing the business down and what better would look like. We will
-					help shape the next useful step.
+					Send a short note about what is slowing you down and what you are trying to make
+					better. We can talk through the practical next step.
 				</p>
 				<a class="button primary" href="mailto:hello@bantatechnologies.com">
 					hello@bantatechnologies.com
@@ -155,7 +275,7 @@ const process = ['Map the operation', 'Design the system', 'Build in focused cyc
 		gap: 24px;
 		padding: 18px clamp(20px, 4vw, 56px);
 		color: #f7f3ea;
-		background: rgba(16, 24, 21, 0.62);
+		background: rgba(16, 24, 21, 0.66);
 		border-bottom: 1px solid rgba(247, 243, 234, 0.14);
 		backdrop-filter: blur(18px);
 	}
@@ -163,6 +283,7 @@ const process = ['Map the operation', 'Design the system', 'Build in focused cyc
 	.brand {
 		display: inline-flex;
 		align-items: center;
+		flex: 0 0 auto;
 		gap: 11px;
 		font-size: 0.95rem;
 		font-weight: 760;
@@ -184,14 +305,16 @@ const process = ['Map the operation', 'Design the system', 'Build in focused cyc
 	nav {
 		display: flex;
 		align-items: center;
-		gap: clamp(14px, 3vw, 34px);
-		font-size: 0.88rem;
+		justify-content: flex-end;
+		gap: clamp(12px, 2.6vw, 32px);
+		font-size: 0.86rem;
 		font-weight: 650;
 	}
 
 	nav a {
 		color: rgba(247, 243, 234, 0.82);
 		text-decoration: none;
+		white-space: nowrap;
 	}
 
 	nav a:hover {
@@ -201,7 +324,7 @@ const process = ['Map the operation', 'Design the system', 'Build in focused cyc
 	.hero {
 		position: relative;
 		display: grid;
-		min-height: 92vh;
+		min-height: 94vh;
 		padding: 150px clamp(20px, 6vw, 82px) 44px;
 		overflow: hidden;
 		color: #f8f3e9;
@@ -219,28 +342,28 @@ const process = ['Map the operation', 'Design the system', 'Build in focused cyc
 		height: 100%;
 		object-fit: cover;
 		object-position: center;
-		opacity: 0.74;
+		opacity: 0.72;
 	}
 
 	.hero-media::after {
 		content: "";
 		background:
-			linear-gradient(90deg, rgba(13, 21, 18, 0.96) 0%, rgba(13, 21, 18, 0.78) 42%, rgba(13, 21, 18, 0.2) 100%),
-			linear-gradient(180deg, rgba(13, 21, 18, 0.3) 0%, rgba(13, 21, 18, 0.28) 62%, rgba(13, 21, 18, 0.86) 100%);
+			linear-gradient(90deg, rgba(13, 21, 18, 0.96) 0%, rgba(13, 21, 18, 0.78) 48%, rgba(13, 21, 18, 0.24) 100%),
+			linear-gradient(180deg, rgba(13, 21, 18, 0.28) 0%, rgba(13, 21, 18, 0.3) 62%, rgba(13, 21, 18, 0.86) 100%);
 	}
 
 	.hero-content {
 		position: relative;
 		z-index: 1;
 		align-self: center;
-		max-width: 790px;
+		max-width: 890px;
 	}
 
 	.eyebrow,
 	.section-kicker {
 		margin: 0 0 14px;
 		color: #d5a84f;
-		font-size: 0.78rem;
+		font-size: 0.76rem;
 		font-weight: 820;
 		letter-spacing: 0.08em;
 		text-transform: uppercase;
@@ -254,10 +377,10 @@ const process = ['Map the operation', 'Design the system', 'Build in focused cyc
 	}
 
 	h1 {
-		max-width: 780px;
+		max-width: 920px;
 		margin-bottom: 22px;
-		font-size: clamp(3.6rem, 10vw, 8.6rem);
-		line-height: 0.9;
+		font-size: clamp(3.2rem, 8vw, 7.7rem);
+		line-height: 0.93;
 		letter-spacing: 0;
 	}
 
@@ -270,7 +393,8 @@ const process = ['Map the operation', 'Design the system', 'Build in focused cyc
 
 	h3 {
 		color: #18231f;
-		font-size: 1.18rem;
+		font-size: 1.16rem;
+		line-height: 1.18;
 	}
 
 	p {
@@ -280,10 +404,10 @@ const process = ['Map the operation', 'Design the system', 'Build in focused cyc
 	}
 
 	.hero-copy {
-		max-width: 620px;
+		max-width: 720px;
 		margin-bottom: 34px;
-		color: rgba(248, 243, 233, 0.84);
-		font-size: clamp(1.1rem, 2vw, 1.35rem);
+		color: rgba(248, 243, 233, 0.86);
+		font-size: clamp(1.08rem, 2vw, 1.35rem);
 		line-height: 1.55;
 	}
 
@@ -332,15 +456,18 @@ const process = ['Map the operation', 'Design the system', 'Build in focused cyc
 		display: grid;
 		grid-template-columns: repeat(4, minmax(0, 1fr));
 		gap: 1px;
-		width: min(100%, 940px);
+		width: min(100%, 1100px);
 		margin-top: 68px;
 		border: 1px solid rgba(248, 243, 233, 0.18);
 		background: rgba(248, 243, 233, 0.14);
 	}
 
 	.hero-strip span {
+		display: grid;
+		align-items: center;
+		min-height: 58px;
 		padding: 15px 16px;
-		color: rgba(248, 243, 233, 0.86);
+		color: rgba(248, 243, 233, 0.88);
 		background: rgba(16, 24, 21, 0.68);
 		font-size: 0.84rem;
 		font-weight: 760;
@@ -349,23 +476,30 @@ const process = ['Map the operation', 'Design the system', 'Build in focused cyc
 
 	.intro,
 	.services,
+	.audience,
+	.why,
 	.process,
+	.about,
 	.contact {
 		padding: clamp(70px, 10vw, 132px) clamp(20px, 6vw, 82px);
 	}
 
-	.intro {
+	.intro,
+	.about,
+	.contact {
 		display: grid;
-		grid-template-columns: minmax(0, 1.08fr) minmax(280px, 0.92fr);
+		grid-template-columns: minmax(0, 1.02fr) minmax(300px, 0.98fr);
 		gap: clamp(36px, 7vw, 96px);
 		align-items: start;
+	}
+
+	.intro {
 		background: #f5f2eb;
 	}
 
-	.intro p:last-child {
+	.intro-copy p:last-child,
+	.about-panel p:last-child {
 		margin-bottom: 0;
-		padding-top: 6px;
-		font-size: 1.08rem;
 	}
 
 	.section-heading {
@@ -375,13 +509,17 @@ const process = ['Map the operation', 'Design the system', 'Build in focused cyc
 		margin-bottom: 42px;
 	}
 
+	.section-heading.compact {
+		margin-bottom: 30px;
+	}
+
 	.services {
 		background: #e8eee9;
 	}
 
 	.service-grid {
 		display: grid;
-		grid-template-columns: repeat(4, minmax(0, 1fr));
+		grid-template-columns: repeat(3, minmax(0, 1fr));
 		gap: 14px;
 	}
 
@@ -398,6 +536,50 @@ const process = ['Map the operation', 'Design the system', 'Build in focused cyc
 	}
 
 	.service-card p {
+		margin-bottom: 0;
+	}
+
+	.audience {
+		background: #f5f2eb;
+	}
+
+	.audience-list {
+		display: grid;
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+		gap: 10px;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+
+	.audience-list li {
+		min-height: 74px;
+		padding: 18px;
+		border: 1px solid #d2cab9;
+		border-radius: 8px;
+		color: #22312c;
+		background: #fbfaf5;
+		font-weight: 760;
+	}
+
+	.why {
+		background: #dce7e0;
+	}
+
+	.reason-grid {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 14px;
+	}
+
+	.reason-grid article {
+		padding: 28px;
+		border-left: 4px solid #0d6f6a;
+		border-radius: 8px;
+		background: #fbfaf5;
+	}
+
+	.reason-grid p {
 		margin-bottom: 0;
 	}
 
@@ -418,23 +600,50 @@ const process = ['Map the operation', 'Design the system', 'Build in focused cyc
 
 	.process-list li {
 		display: grid;
-		align-content: space-between;
-		min-height: 190px;
+		align-content: start;
+		min-height: 250px;
 		padding: 24px;
 		border-right: 1px solid #cfc7b6;
 		border-bottom: 1px solid #cfc7b6;
 	}
 
 	.process-list span {
+		margin-bottom: 48px;
 		color: #0d6f6a;
 		font-size: 0.86rem;
 		font-weight: 820;
 	}
 
 	.process-list strong {
+		margin-bottom: 14px;
 		color: #17201d;
-		font-size: 1.28rem;
+		font-size: 1.25rem;
 		line-height: 1.15;
+	}
+
+	.process-list p {
+		margin-bottom: 0;
+		font-size: 0.95rem;
+		line-height: 1.58;
+	}
+
+	.about {
+		background: #17201d;
+	}
+
+	.about h2 {
+		color: #f8f3e9;
+	}
+
+	.about-panel {
+		padding: 30px;
+		border: 1px solid rgba(248, 243, 233, 0.16);
+		border-radius: 8px;
+		background: rgba(248, 243, 233, 0.08);
+	}
+
+	.about-panel p {
+		color: rgba(248, 243, 233, 0.82);
 	}
 
 	.proof {
@@ -446,14 +655,11 @@ const process = ['Map the operation', 'Design the system', 'Build in focused cyc
 		max-width: 1120px;
 		margin: 0;
 		color: #f8f3e9;
-		font-size: clamp(1.9rem, 5vw, 5.1rem);
-		line-height: 1.02;
+		font-size: clamp(1.8rem, 4.6vw, 4.8rem);
+		line-height: 1.04;
 	}
 
 	.contact {
-		display: grid;
-		grid-template-columns: minmax(0, 1fr) minmax(320px, 520px);
-		gap: clamp(32px, 7vw, 100px);
 		background: #d9d0be;
 	}
 
@@ -472,20 +678,39 @@ const process = ['Map the operation', 'Design the system', 'Build in focused cyc
 		width: 100%;
 	}
 
-	@media (max-width: 980px) {
-		.hero {
-			min-height: 88vh;
-			padding-top: 128px;
-		}
-
+	@media (max-width: 1080px) {
 		.hero-strip,
-		.service-grid,
+		.audience-list,
 		.process-list {
 			grid-template-columns: repeat(2, minmax(0, 1fr));
 		}
 
+		.service-grid,
+		.reason-grid {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+	}
+
+	@media (max-width: 860px) {
+		.site-header {
+			align-items: flex-start;
+			padding: 16px 18px;
+		}
+
+		nav {
+			flex-wrap: wrap;
+			row-gap: 8px;
+			max-width: 430px;
+		}
+
+		.hero {
+			min-height: 90vh;
+			padding-top: 132px;
+		}
+
 		.intro,
 		.section-heading,
+		.about,
 		.contact {
 			grid-template-columns: 1fr;
 		}
@@ -494,8 +719,7 @@ const process = ['Map the operation', 'Design the system', 'Build in focused cyc
 	@media (max-width: 680px) {
 		.site-header {
 			position: absolute;
-			align-items: flex-start;
-			padding: 16px 18px;
+			gap: 14px;
 		}
 
 		.brand span:last-child {
@@ -503,13 +727,13 @@ const process = ['Map the operation', 'Design the system', 'Build in focused cyc
 		}
 
 		nav {
-			gap: 12px;
-			font-size: 0.78rem;
+			gap: 10px;
+			font-size: 0.76rem;
 		}
 
 		.hero {
-			min-height: 90vh;
-			padding: 112px 18px 28px;
+			min-height: 94vh;
+			padding: 122px 18px 28px;
 		}
 
 		.hero-media img {
@@ -518,16 +742,16 @@ const process = ['Map the operation', 'Design the system', 'Build in focused cyc
 
 		.hero-media::after {
 			background:
-				linear-gradient(90deg, rgba(13, 21, 18, 0.94) 0%, rgba(13, 21, 18, 0.78) 70%, rgba(13, 21, 18, 0.45) 100%),
+				linear-gradient(90deg, rgba(13, 21, 18, 0.94) 0%, rgba(13, 21, 18, 0.82) 70%, rgba(13, 21, 18, 0.48) 100%),
 				linear-gradient(180deg, rgba(13, 21, 18, 0.18) 0%, rgba(13, 21, 18, 0.34) 58%, rgba(13, 21, 18, 0.88) 100%);
 		}
 
 		h1 {
-			font-size: clamp(3rem, 18vw, 5rem);
+			font-size: clamp(3rem, 15vw, 4.8rem);
 		}
 
 		h2 {
-			font-size: clamp(2rem, 11vw, 3rem);
+			font-size: clamp(2rem, 10vw, 3rem);
 		}
 
 		.hero-actions,
@@ -537,6 +761,8 @@ const process = ['Map the operation', 'Design the system', 'Build in focused cyc
 
 		.hero-strip,
 		.service-grid,
+		.audience-list,
+		.reason-grid,
 		.process-list {
 			grid-template-columns: 1fr;
 		}
@@ -547,7 +773,10 @@ const process = ['Map the operation', 'Design the system', 'Build in focused cyc
 
 		.intro,
 		.services,
+		.audience,
+		.why,
 		.process,
+		.about,
 		.contact {
 			padding: 66px 18px;
 		}
@@ -557,10 +786,15 @@ const process = ['Map the operation', 'Design the system', 'Build in focused cyc
 			min-height: auto;
 		}
 
+		.process-list span {
+			margin-bottom: 34px;
+		}
+
 		.proof {
 			padding: 64px 18px;
 		}
 
+		.about-panel,
 		.contact-panel {
 			padding: 22px;
 		}
