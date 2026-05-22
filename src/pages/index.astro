@@ -213,6 +213,28 @@ const process = [
 			</ol>
 		</section>
 
+		<section class="in-house-project" aria-labelledby="in-house-project-title">
+			<div class="section-heading">
+				<p class="section-kicker">In-house project</p>
+				<h2 id="in-house-project-title">
+					Live internal work for practical website workflows.
+				</h2>
+			</div>
+			<p class="in-house-project-copy">
+				Banta Technologies also builds and maintains practical in-house projects that test real
+				website workflows, content publishing, analytics, automation, and AI-assisted creative
+				production.
+			</p>
+			<article class="project-card">
+				<h3>Wahkonsa Lodge</h3>
+				<p>
+					A creative publishing site featuring downloadable coloring pages, phone wallpapers,
+					request forms, analytics tracking, and AI-assisted image workflows.
+				</p>
+				<a class="button primary" href="https://wahkonsalodge.com">View Wahkonsa Lodge</a>
+			</article>
+		</section>
+
 		<section id="about" class="about" aria-labelledby="about-title">
 			<div>
 				<p class="section-kicker">About Victor</p>
@@ -478,6 +500,7 @@ const process = [
 	.audience,
 	.why,
 	.process,
+	.in-house-project,
 	.about,
 	.contact {
 		padding: clamp(70px, 10vw, 132px) clamp(20px, 6vw, 82px);
@@ -624,6 +647,34 @@ const process = [
 		margin-bottom: 0;
 		font-size: 0.95rem;
 		line-height: 1.58;
+	}
+
+	.in-house-project {
+		background: #e8eee9;
+	}
+
+	.in-house-project-copy {
+		max-width: 760px;
+		margin-bottom: 28px;
+	}
+
+	.project-card {
+		display: grid;
+		gap: 18px;
+		max-width: 720px;
+		padding: 30px;
+		border: 1px solid #ccd8d0;
+		border-radius: 8px;
+		background: #fbfaf5;
+	}
+
+	.project-card h3,
+	.project-card p {
+		margin-bottom: 0;
+	}
+
+	.project-card .button {
+		justify-self: start;
 	}
 
 	.about {
@@ -775,6 +826,7 @@ const process = [
 		.audience,
 		.why,
 		.process,
+		.in-house-project,
 		.about,
 		.contact {
 			padding: 66px 18px;
@@ -793,6 +845,7 @@ const process = [
 			padding: 64px 18px;
 		}
 
+		.project-card,
 		.about-panel,
 		.contact-panel {
 			padding: 22px;
